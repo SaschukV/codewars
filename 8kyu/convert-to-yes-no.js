@@ -5,3 +5,5 @@
 function boolToWord(bool) {
   return bool ? 'Yes' : 'No'
 }
+console.log('convertToYesNo :', boolToWord(true))
+console.log('convertToYesNo :', boolToWord(false))
