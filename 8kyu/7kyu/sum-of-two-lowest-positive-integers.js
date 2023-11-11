@@ -6,7 +6,7 @@
 
 // [10, 343445353, 3453445, 3453545353453] should return 3453455.
 
-// ✅ Solution
+// ✅ Solution 1
 function sumTwoSmallestNumbers(numbers) {
   let num1 = Math.min(...numbers)
   let arr1 = numbers.filter((el) => Math.min(...numbers) !== el)
@@ -16,3 +16,9 @@ function sumTwoSmallestNumbers(numbers) {
 }
 
 console.log(sumTwoSmallestNumbers([1, 2, 3, 4])) //3
+
+// ✅ Solution 2
+function sumTwoSmallestNumbers(numbers) {
+  numbers.sort((a, b) => a - b)
+  return numbers[0] + numbers[1]
+}
