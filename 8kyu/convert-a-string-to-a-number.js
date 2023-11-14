@@ -8,3 +8,9 @@ const stringToNumber = function (str) {
 }
 
 console.log(stringToNumber('55')) // 55
+
+// ✅ Solution2:
+const stringToNumber2 = function (str) {
+  return Number(str)
+}
+console.log(stringToNumber2('99')) //99
