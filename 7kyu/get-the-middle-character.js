@@ -24,3 +24,8 @@ function getMiddle(s) {
 
 console.log(getMiddle('dfghjwgtyui')) // w
 console.log(getMiddle('fghjklfghjkk')) // lf
+
+// ✅ Solution:
+function getMiddle2(s) {
+  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1)
+}
