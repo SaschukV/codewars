@@ -12,3 +12,12 @@ function grow(x) {
 }
 
 console.log(grow([1, 2, 3, 4])) //24
+
+// ✅ Solution2:
+const grow = (x) => {
+  let res = 1
+  for (let i = 0; i < x.length; i++) {
+    res *= x[i]
+  }
+  return res
+}
