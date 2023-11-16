@@ -28,3 +28,12 @@ String.prototype.toJadenCase = function () {
 }
 
 console.log("I'm vova pety sasha".toJadenCase()) // I'm Vova Pety Sasha
+
+// ✅ Solution2:
+String.prototype.toJadenCase2 = function () {
+  return this.split(' ')
+    .map((item) => item[0].toUpperCase() + item.slice(1))
+    .join(' ')
+}
+
+console.log("I'm vova pety sasha".toJadenCase2()) //  I'm Vova Pety Sasha
