@@ -18,3 +18,11 @@ function isIsogram(str) {
 
 console.log(isIsogram('AsdGhjk')) // true
 console.log(isIsogram('AAbklpo')) //false
+
+// ✅ Solution2:
+function isIsogram2(str) {
+  return new Set(str.toUpperCase()).size === str.length
+}
+
+console.log(isIsogram2('AsdGhjk'))
+console.log(isIsogram2('AAbklpo'))
