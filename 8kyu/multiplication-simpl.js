@@ -9,3 +9,8 @@ const simpleMultiplication = (number) =>
 
 console.log(simpleMultiplication(4)) // 32
 console.log(simpleMultiplication(9)) // 81
+
+// ✅ Solution2:
+const simpleMultiplication2 = (n) => n * (n % 2 === 0 ? 8 : 9)
+console.log(simpleMultiplication2(4)) // 32
+console.log(simpleMultiplication2(9)) // 81
