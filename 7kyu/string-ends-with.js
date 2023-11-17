@@ -14,3 +14,13 @@ function solution(str, ending) {
 console.log(solution('asdfghk', 'ghk')) // true
 console.log(solution('asdfghk', 'yhk')) // false
 console.log(solution('asdfghk', '')) // true
+
+// ✅ Solution2:
+
+function solution2(str, ending) {
+  return str.endsWith(ending)
+}
+
+console.log(solution2('asdfghk', 'ghk')) // true
+console.log(solution2('asdfghk', 'yhk')) // false
+console.log(solution2('asdfghk', '')) // true
