@@ -17,3 +17,23 @@ class SmallestIntegerFinder {
 let obj = new SmallestIntegerFinder()
 
 console.log(obj.findSmallestInt([1, 2, 3, 0])) // 0
+
+// ✅ Solution2:
+class SmallestIntegerFinder2 {
+  findSmallestInt(args) {
+    return Math.min(...args)
+  }
+}
+let obj2 = new SmallestIntegerFinder2()
+
+console.log(obj2.findSmallestInt([-1, 3, 0, 45, -90, 78])) //-90
+
+// ✅ Solution3:
+class SmallestIntegerFinder3 {
+  findSmallestInt(args) {
+    return Math.min.apply(null, args)
+  }
+}
+let obj3 = new SmallestIntegerFinder3()
+
+console.log(obj3.findSmallestInt([-1, 3, 0, 45, -90, 78, 34, -99])) //-99
