@@ -26,14 +26,15 @@ function twoToOne(s1, s2) {
   })
   let j = arr1.length - 1
   for (let i = 0; i <= j; i++) {
-    if (arr1[i] === arr[i + 1]) {
+    if (arr1[i] === arr1[i + 1]) {
       delete arr1[i]
     }
   }
   return arr1.filter((el) => el !== undefined).join('')
 }
-console.log(twoToOne('kkkop', 'abbbsfz')) //  abfkopsz
+console.log(twoToOne('kkkop', 'abbbsfzaab')) //  abfkopsz
+console.log(twoToOne('kkkkww', 'abbbsfzzzz')) //  abfksz
 
 // ✅ Solution2:
 const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join('')
-console.log(twoToOne('kkkop', 'abbbsfz')) //  abfkopsz
+//console.log(twoToOne('kkkop', 'abbbsfz')) //  abfkopsz
