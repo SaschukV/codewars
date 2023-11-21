@@ -36,3 +36,15 @@ function duplicateCount(text) {
 }
 
 console.log(duplicateCount('abracadabra89900')) // 5
+
+// ✅ Solution2:
+
+function duplicateCount(text) {
+  return text
+    .toLowerCase()
+    .split('')
+    .filter(function (val, i, arr) {
+      return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i
+    }).length
+}
+console.log(duplicateCount('Indivisibilities')) //2
