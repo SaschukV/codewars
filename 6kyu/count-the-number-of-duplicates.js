@@ -39,7 +39,17 @@ console.log(duplicateCount('abracadabra89900')) // 5
 
 // ✅ Solution2:
 
-function duplicateCount(text) {
+function duplicateCount2(text) {
+  return [...text.toUpperCase()].filter((val, i, arr) => {
+    return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i
+  }).length
+}
+
+console.log(duplicateCount2('Indivisibilities')) //2
+
+// ✅ Solution3:
+
+function duplicateCount3(text) {
   return text
     .toLowerCase()
     .split('')
@@ -47,4 +57,4 @@ function duplicateCount(text) {
       return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i
     }).length
 }
-console.log(duplicateCount('Indivisibilities')) //2
+console.log(duplicateCount3('Indivisibilities')) //2
