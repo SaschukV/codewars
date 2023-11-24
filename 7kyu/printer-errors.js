@@ -45,5 +45,16 @@ function printerError(str) {
   })
   return `${arr.length}/${str.length}`
 }
-
 console.log(printerError('aaacbfghkwzxry')) // 5/14
+// ✅ Solution2:
+function printerError2(s) {
+  // your code
+  var count = 0
+  for (var i = 0; i < s.length; i++) {
+    if (s[i] > 'm') {
+      count++
+    }
+  }
+  return count + '/' + s.length
+}
+console.log(printerError2('aaacbfghkwzxry')) //5/14
