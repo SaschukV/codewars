@@ -9,3 +9,11 @@ function booleanToString(b) {
 }
 console.log(booleanToString(1 > 0)) // 'true'
 console.log(booleanToString(1 < 0)) // 'false'
+
+// ✅ Solution2:
+function booleanToString2(b) {
+  return `${b}`
+}
+
+console.log(booleanToString2(1 > 0)) // 'true'
+console.log(booleanToString2(1 < 0)) // 'false'
