@@ -18,3 +18,10 @@ function countBy(x, n) {
   return z
 }
 console.log(countBy(3, 6)) // [3,6,9,12,15,18]
+
+// ✅ Solution2:
+
+function countBy2(x, n) {
+  return [...Array(n)].map((_, ind) => ++ind * x)
+}
+console.log(countBy2(3, 6)) // [3,6,9,12,15,18]
