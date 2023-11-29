@@ -14,3 +14,10 @@ function findShort(s) {
 }
 
 console.log(findShort('The tree names famaly kgkgkgkkjk')) // 3
+
+// ✅ Solution2:
+function findShort2(s) {
+  return Math.min(...s.split(' ').map((el) => el.length))
+}
+
+console.log(findShort2('The tree names famaly kgkgkgkkjk')) // 3
