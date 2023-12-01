@@ -11,3 +11,12 @@ function rentalCarCost(d) {
 console.log(rentalCarCost(8)) // 270
 console.log(rentalCarCost(2)) // 80
 console.log(rentalCarCost(5)) // 180
+
+// ✅ Solution2:
+
+function rentalCarCost2(d) {
+  return d * 40 - (d > 6 ? 50 : d > 2 ? 20 : 0)
+}
+console.log(rentalCarCost2(8)) //270
+console.log(rentalCarCost2(2)) //80
+console.log(rentalCarCost2(5)) // 180
